@@ -46,12 +46,3 @@ prompt = f"""
     """
 response = get_completion(prompt)
 print(response)
-
-curl https://api.openai.com/v1/chat/completions \
--H "Content-Type: application/json" \
--H "Authorization: Bearer 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" \
--d '{
-   "model": "gpt-3.5-turbo",
-   "messages": [{"role": "user", "content": "Say this is a test!"}],
-   "temperature": 0.7
- }'
